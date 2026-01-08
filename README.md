@@ -40,6 +40,23 @@ The application is designed as an academic project to demonstrate backend authen
 
 - app.py  
   Application entry point and Blueprint registration
+  
+  ## System Architecture Overview
+
+- Flask application structured using Blueprint architecture
+- Separation of concerns between authentication, cashier, and user modules
+- Centralized session handling
+- MySQL database connection using `mysql-connector-python`
+- Jinja2 templates for dynamic HTML rendering
+
+  ## Technology Stack
+
+- Backend: Flask (Blueprint-based architecture)
+- Database: MySQL (XAMPP / phpMyAdmin)
+- Authentication: Session-based login
+- Frontend: HTML, CSS
+- Templates: Jinja2
+- Database Connector: mysql-connector-python
 
 ## Notes
 
