@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Dashboard</title>
+    <style>
+        body {
+            background: linear-gradient(120deg, #ffdde1, #ee9ca7);
+            color: #4a4a4a;
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            margin-top: 120px;
+        }
+        h1 { color: #d63384; }
+        a {
+            color: white; 
+            background-color: #d16ba5;
+            padding: 10px 20px; 
+            border-radius: 25px;
+            text-decoration: none; 
+            display: inline-block;
+            margin-top: 15px; 
+            font-weight: bold;
+        }
+        a:hover { background-color: #c06c84; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to your dashboard 💕</h1>
+    <p>You are logged in as a user.</p>
+    <a href="{{ url_for('user_bp.user_logout') }}">Logout</a>
+</body>
+</html>

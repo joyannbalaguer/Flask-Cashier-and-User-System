@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cashier Dashboard</title>
+    <style>
+        body {
+            background: linear-gradient(120deg, #fbc2eb, #a6c1ee);
+            color: #4a4a4a;
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+            margin-top: 120px;
+        }
+        h1 { color: #9b59b6; }
+        a {
+            color: white; 
+            background-color: #b5838d;
+            padding: 10px 20px; 
+            border-radius: 25px;
+            text-decoration: none; 
+            display: inline-block;
+            margin-top: 15px; 
+            font-weight: bold;
+        }
+        a:hover { background-color: #a47179; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to your dashboard 🌷</h1>
+    <p>You are logged in as a cashier.</p>
+    <a href="{{ url_for('cashier_bp.cashier_logout') }}">Logout</a>
+</body>
+</html>
